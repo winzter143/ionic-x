@@ -1,9 +1,14 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab Two
+      <h1>Tab Two</h1>
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+  <button id="increment" (click)="increment()">Increment</button>
+  <div>Current Count: {{ xcount | async }}</div>
+  <button id="decrement" (click)="decrement()">Decrement</button>
+  <button id="reset" (click)="reset()">Reset Counter</button>
+</ion-content>

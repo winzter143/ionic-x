@@ -2,6 +2,11 @@
   <ion-toolbar>
     <ion-title>
       Tab Three
+      <button id="increment" (click)="increment()">Increment</button>
+      <div>Current Count: {{ qcount | async }}</div>
+      <button id="decrement" (click)="decrement()">Decrement</button>
+      <button id="reset" (click)="reset()">Reset Counter</button>
+
     </ion-title>
   </ion-toolbar>
 </ion-header>

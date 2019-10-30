@@ -19,6 +19,12 @@ export class AppComponent {
   }
 
   initializeApp() {
+
+   let xxx = "POST\r\n"+
+    "authorize\r\n" +
+    "Mon Aug 19 18:38:50 SGT 2019";
+
+    console.log(xxx.split("\r\n"));
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
